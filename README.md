@@ -186,9 +186,10 @@ From the results section above we can see how different ML models work on the sa
 
 **Last 2 models – ensemble models**
 
-- Other two models did better. Their **accuracy scores** are 0.64 and 0.92 for Balanced Random Forest Classifier and Easy Ensemble AdaBoost Classifier respectively.
+- Other two models did better. Their **accuracy scores** are 0.93 and 0.92 for Balanced Random Forest Classifier and Easy Ensemble AdaBoost Classifier respectively.
 - **Recall scores** for both model and both – low and high risk scores and precision for low risk were high, meaning very good accuracy.
-- **Precision** for high risk loans in both models weren’t high. 0.56 and 0.06 for Balanced Random Forest Classifier and Easy Ensemble AdaBoost Classifier respectively, indicating that there were **large number of false positives**, meaning that large number of low risk loans were marked as high risk.
+- **Precision** for high risk loans in both models weren’t high. 0.03 and 0.09 for Balanced Random Forest Classifier and Easy Ensemble AdaBoost Classifier respectively, 
+  - indicating that there were **large number of false positives**, meaning that large number of low risk loans were marked as high risk.
 
 ### Recommendation on the model
 
