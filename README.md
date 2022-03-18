@@ -14,6 +14,7 @@ The purpose of this analysis is to create a supervised machine learning model th
 - SMOTEENN Sampling
 - Balanced Random Forest Classifying
 - Easy Ensemble Classifying
+
 Through each of these methods, we need to split the data into training and testing datasets, and compiled accuracy scores, confusion matrices, and classification reports as per results.
 
 
@@ -122,13 +123,13 @@ SMOTEENN is an approach to resampling that combines aspects of both oversampling
 ### 5. Balanced Random Forest Classifier
 Instead of having a single, complex tree like the ones created by decision trees, a random forest algorithm will sample the data and build several smaller, simpler decision trees. Each tree is simpler because it is built from a random subset of features.
 
-- **Accuracy score:** 0.64
+- **Accuracy score:** 0.93
 - **Precision**
-    - For high risk: 0.56
+    - For high risk: 0.03
     - For low risk: 1.00
 - **Recall**
-    - For high risk: 0.30
-    - For low risk: 1.00
+    - For high risk: 0.70
+    - For low risk: 0.87
 
 <p align="center">
 <img src="Images/Forest.png" width="50%" height="50%">
@@ -142,12 +143,12 @@ Instead of having a single, complex tree like the ones created by decision trees
 ### 6. Easy Ensemble AdaBoost Classifier
 In AdaBoost Classifier, a model is trained then evaluated. After evaluating the errors of the first model, another model is trained. The model gives extra weight to the errors from the previous model. The purpose of this weighting is to minimize similar errors in subsequent models. This process is repeated until the error rate is minimized .
 
-- **Accuracy score:** 0.92
+- **Accuracy score:** 0.93
 - **Precision**
-    - For high risk: 0.06
+    - For high risk: 0.09
     - For low risk: 1.00
 - **Recall**
-    - For high risk: 0.91
+    - For high risk: 0.92
     - For low risk: 0.94
 
 <p align="center">
