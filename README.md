@@ -60,3 +60,100 @@ In random oversampling, instances of the minority class are randomly selected an
 <p align="center">
 <i>Figure 1: Results for Naive Random Oversampling.</i>
 </p>
+
+### 2. SMOTE Oversampling and Logistic Regression
+The synthetic minority oversampling technique (SMOTE) is another oversampling approach where the minority class is increased. Unlike other oversampling methods, SMOTE interpolated new instances, that is, for an instance from the minority class, a number of its closest neighbors is chosen. Based on the values of these neighbors, new values are created.
+
+- **Accuracy score:** 0.65
+- **Precision**
+    - For high risk: 0.01
+    - For low risk: 1.00
+- **Recall**
+    - For high risk: 0.63
+    - For low risk: 0.68
+
+<p align="center">
+<img src="Images/SMOTE.png" width="50%" height="50%">
+</p>
+
+<p align="center">
+<i>Figure 2: Results for SMOTE Oversampling.</i>
+</p>
+
+### 3. Cluster Centroids Undersampling and Logistic Regression
+Undersampling takes the opposite approach of oversampling. Instead of increasing the number of the minority class, the size of the majority class is decreased.
+
+- **Accuracy score:** 0.54
+- **Precision**
+    - For high risk: 0.01
+    - For low risk: 1.00
+- **Recall**
+    - For high risk: 0.69
+    - For low risk: 0.40
+
+<p align="center">
+<img src="Imagess/Undersampling.png" width="50%" height="50%">
+</p>
+
+<p align="center">
+<i>Figure 3: Results for ClusterCentroids Undersampling.</i>
+</p>
+
+### 4. SMOTEENN (Combination of Over and Under Sampling) and Logistic Regression
+SMOTEENN is an approach to resampling that combines aspects of both oversampling and undersampling - oversample the minority class with SMOTE and clean the resulting data with an undersampling strategy. 
+
+- **Accuracy score:** 0.54
+- **Precision**
+    - For high risk: 0.01
+    - For low risk: 1.00
+- **Recall**
+    - For high risk: 0.70
+    - For low risk: 0.58
+
+<p align="center">
+<img src="Imagess/SMOTEENN.png" width="50%" height="50%">
+</p>
+
+<p align="center">
+<i>Figure 4: Results for SMOTTEENN Model.</i>
+</p>
+
+
+### 5. Balanced Random Forest Classifier
+Instead of having a single, complex tree like the ones created by decision trees, a random forest algorithm will sample the data and build several smaller, simpler decision trees. Each tree is simpler because it is built from a random subset of features.
+
+- **Accuracy score:** 0.64
+- **Precision**
+    - For high risk: 0.56
+    - For low risk: 1.00
+- **Recall**
+    - For high risk: 0.30
+    - For low risk: 1.00
+
+<p align="center">
+<img src="Images/Forest.png" width="50%" height="50%">
+</p>
+
+<p align="center">
+<i>Figure 5: Results for Balanced Random Forest Classifier Model.</i>
+</p>
+
+
+### 6. Easy Ensemble AdaBoost Classifier
+In AdaBoost Classifier, a model is trained then evaluated. After evaluating the errors of the first model, another model is trained. The model gives extra weight to the errors from the previous model. The purpose of this weighting is to minimize similar errors in subsequent models. This process is repeated until the error rate is minimized .
+
+- **Accuracy score:** 0.92
+- **Precision**
+    - For high risk: 0.06
+    - For low risk: 1.00
+- **Recall**
+    - For high risk: 0.91
+    - For low risk: 0.94
+
+<p align="center">
+<img src="Images/Boost.png" width="50%" height="50%">
+</p>
+
+<p align="center">
+<i>Figure 6: Results for Easy Ensemble AdaBoost Classifier Model.</i>
+</p>
