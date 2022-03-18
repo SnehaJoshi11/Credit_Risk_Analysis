@@ -28,5 +28,5 @@ Through each of these methods, we need to split the data into training and testi
 - Data Source: LoanStats_2019Q1.csv (file it’s not uploaded to GitHub because of its size)
 - Software: **Jupyter Notebook**
 - Languages: **Python**
-- Libraries: **Scikit-learn**
+- Libraries: **Scikit-learn** , **imbalanced-learn**
 - Environment: **Python 3.7**
