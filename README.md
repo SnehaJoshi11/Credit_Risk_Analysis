@@ -72,7 +72,6 @@ The synthetic minority oversampling technique (SMOTE) is another oversampling ap
 - **Recall**
     - For high risk: 0.63
     - For low risk: 0.68
-
 <p align="center">
 <img src="Images/SMOTE_Oversampling.png" width="50%" height="50%">
 </p>
@@ -93,7 +92,7 @@ Undersampling takes the opposite approach of oversampling. Instead of increasing
     - For low risk: 0.40
 
 <p align="center">
-<img src="Imagess/Undersampling.png" width="50%" height="50%">
+<img src="Images/Undersampling.png" width="50%" height="50%">
 </p>
 
 <p align="center">
@@ -112,7 +111,7 @@ SMOTEENN is an approach to resampling that combines aspects of both oversampling
     - For low risk: 0.57
 
 <p align="center">
-<img src="Imagess/Combination_(Over and Under)_Sampling.png" width="50%" height="50%">
+<img src="Images/Combination_(Over and Under)_Sampling.png" width="50%" height="50%">
 </p>
 
 <p align="center">
