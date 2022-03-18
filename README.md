@@ -161,7 +161,7 @@ In AdaBoost Classifier, a model is trained then evaluated. After evaluating the 
 
 ## Summary
 
-From the results section above we can see how different ML models work on the same data. I would like to start the interpretation of the results with a brief explanation of the outcomes.
+From the results section above we can see how different ML models work on the same data. We will start the interpretation of the results with detail explanation of the outcomes.
 
 - **Accuracy score**  tells us what percentage of predictions the model gets it right. However, it is not enough just to see that results, especially with unbalanced data. *Equation: accuracy score = number of correct prediction / total number of predictions*
 
@@ -173,25 +173,31 @@ From the results section above we can see how different ML models work on the sa
 
 ### Results summary
 
-**First 4 models – resampling and logistic regression**
+**First 4 models – Resampling and Logistic regression**
 
-- From the results above we can see that first four models don’t do well based off the **accuracy scores**.
-  - Those scores are 0.65, 0.66, 0.54 and 0.54 for Naive Random Oversampling, SMOTE Oversampling, Cluster Centroids Undersampling and SMOTEENN model respectively, meaning the models were accurate roughly a bit more than half of the time.<br>
-- **Precision** for all four models is 0.01 for high risk loand and 1.00 for low risk loans. 
+- From the results above we can see that first four models don’t do well based on the **accuracy scores**.
+  - Those scores are 0.65, 0.66, 0.54 and 0.54 for Naive Random Oversampling, SMOTE Oversampling, Cluster Centroids Undersampling and SMOTEENN model respectively.
+  - It means the models were accurate roughly a bit more than half of the time.
+- **Precision** for all four models is 0.01 for high risk loans and 1.00 for low risk loans. 
 - **Low precision score** for high risk loans is due to large number of false positives,
   -  It means low risk loans were marked as high risk loans.
-  -  High score for low risk loans indicate that nearly all low risk scores were marked correctly; 
-  -  however, lower **recall score** (0.71 for naive Naive Random Oversampling and Logistic Regression, for example) indicates that there were quite a few low risk loans that were market as high risk, when they actually weren’t.
+  -  High score for low risk loans indicate that nearly all low risk scores were marked correctly,
+  - **recall score** (0.71 for Naive Random Oversampling and Logistic Regression, for example) indicates that there were quite a few low risk loans that were market as high risk, when they actually weren’t.
   -   Actual high risk loans have slightly better scores on recall (0.60 for naive Naive Random Oversampling and Logistic Regression, for example) meaning that there weren’t as many false negatives or not too many high risk loans were marked as low risk loans. 
 
-**Last 2 models – ensemble models**
+**Last 2 models – Ensemble models**
 
-- Other two models did better. Their **accuracy scores** are 0.93 and 0.92 for Balanced Random Forest Classifier and Easy Ensemble AdaBoost Classifier respectively.
-- **Recall scores** for both model and both – low and high risk scores and precision for low risk were high, meaning very good accuracy.
-- **Precision** for high risk loans in both models weren’t high. 0.03 and 0.09 for Balanced Random Forest Classifier and Easy Ensemble AdaBoost Classifier respectively, 
-  - indicating that there were **large number of false positives**, meaning that large number of low risk loans were marked as high risk.
+- These models did better as compare to above models.
+- Their **accuracy scores** are 0.93 and 0.92 for Balanced Random Forest Classifier and Easy Ensemble AdaBoost Classifier respectively.
+- **Recall scores** for each model and with – low and high risk scores and precision for low risk were high, meaning very good in accuracy.
+- **Precision** for high risk loans in both models are not high.
+  - 0.03 and 0.09 for Balanced Random Forest Classifier and Easy Ensemble AdaBoost Classifier respectively, 
+  - It indicates that, there are **large number of false positives**, and it means that large number of low risk loans are marked as high risk.
 
 ### Recommendation on the model
 
-Since first three models didn’t do well on the test, in the real-word testing without further fine-tuning, for example train model on larger dataset, or look through the columns that were use for training the model. 
-Other two models showed better results, wecan use them with caution, since they might be prone to overfitting. If that occurs and we don’t get desired results when working with new data set, we can do some further fine-tunning (pruning) to avoid the overfitting. 
+- As per the above details, First three models(algorithms) didnt do well on the test, So we cant recommend to use them in the real-word testing without further fine-tuning,
+  -  for example train model on larger dataset, we need to look through the dataset columns that will be use for training the model.
+ 
+- Other two models showed better results, So we can use them carefully, they might be prone to overfitting. 
+  - If that occurs and we don’t get desired results when working with new data set, we can do some further fine-tunning (pruning) to avoid the overfitting. 
