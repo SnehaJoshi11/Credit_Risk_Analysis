@@ -55,7 +55,7 @@ In random oversampling, instances of the minority class are randomly selected an
     - For low risk: 0.60
 
 <p align="center">
-<img src="Images/Oversampling.png" width="50%" height="50%">
+<img src="Images/Naive_Random_Oversampling.png" width="50%" height="50%">
 </p>
 
 <p align="center">
@@ -74,7 +74,7 @@ The synthetic minority oversampling technique (SMOTE) is another oversampling ap
     - For low risk: 0.68
 
 <p align="center">
-<img src="Images/SMOTE.png" width="50%" height="50%">
+<img src="Images/SMOTE_Oversampling.png" width="50%" height="50%">
 </p>
 
 <p align="center">
@@ -108,11 +108,11 @@ SMOTEENN is an approach to resampling that combines aspects of both oversampling
     - For high risk: 0.01
     - For low risk: 1.00
 - **Recall**
-    - For high risk: 0.70
-    - For low risk: 0.58
+    - For high risk: 0.72
+    - For low risk: 0.57
 
 <p align="center">
-<img src="Imagess/SMOTEENN.png" width="50%" height="50%">
+<img src="Imagess/Combination_(Over and Under)_Sampling.png" width="50%" height="50%">
 </p>
 
 <p align="center">
@@ -123,7 +123,7 @@ SMOTEENN is an approach to resampling that combines aspects of both oversampling
 ### 5. Balanced Random Forest Classifier
 Instead of having a single, complex tree like the ones created by decision trees, a random forest algorithm will sample the data and build several smaller, simpler decision trees. Each tree is simpler because it is built from a random subset of features.
 
-- **Accuracy score:** 0.93
+- **Accuracy score:** 0.78
 - **Precision**
     - For high risk: 0.03
     - For low risk: 1.00
@@ -132,7 +132,7 @@ Instead of having a single, complex tree like the ones created by decision trees
     - For low risk: 0.87
 
 <p align="center">
-<img src="Images/Forest.png" width="50%" height="50%">
+<img src="Images/Balanced_Random_Forest_Classifier.png" width="50%" height="50%">
 </p>
 
 <p align="center">
@@ -152,7 +152,7 @@ In AdaBoost Classifier, a model is trained then evaluated. After evaluating the 
     - For low risk: 0.94
 
 <p align="center">
-<img src="Images/Boost.png" width="50%" height="50%">
+<img src="Images/Easy_Ensemble_AdaBoost_Classifier.png" width="50%" height="50%">
 </p>
 
 <p align="center">
