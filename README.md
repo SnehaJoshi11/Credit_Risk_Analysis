@@ -30,3 +30,33 @@ Through each of these methods, we need to split the data into training and testi
 - Languages: **Python**
 - Libraries: **Scikit-learn** , **imbalanced-learn**
 - Environment: **Python 3.7**
+
+## Results
+
+In this analysis we used six different algorithms of **supervised machine learning**.
+  - First four algorithms are based on **resampling techniques** and are designed to deal with **class imbalance**. 
+  - After the data is resampled, Logistic Regression is used to predict the outcome. 
+    - Logistic regression predicts **binary outcomes** .
+  - The last two models are from ensemble learning group.
+    - The concept of ensemble learning is the process of combining multiple models, 
+    - Like decision tree algorithms, to help improve the accuracy and robustness, as well as decrease variance of the model,
+    - therefore increase the overall performance of the model .
+
+### 1. Naive Random Oversampling and Logistic Regression
+In random oversampling, instances of the minority class are randomly selected and added to the training set until the majority and minority classes are balanced. 
+
+- **Accuracy score:** 0.65
+- **Precision**
+    - For high risk: 0.01
+    - For low risk: 1.00
+- **Recall**
+    - For high risk: 0.71
+    - For low risk: 0.60
+
+<p align="center">
+<img src="Images/Oversampling.png" width="50%" height="50%">
+</p>
+
+<p align="center">
+<i>Figure 1: Results for Naive Random Oversampling.</i>
+</p>
